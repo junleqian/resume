@@ -100,25 +100,27 @@
       {Software Development Engineer II}{May 2017 - Present}
       \resumeItemListStart
         \resumeItem{IntelliCloud BaaS API}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{IntelliCloud BaaS Metering}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+          {Designed and developed serverless RESTful API for BaaS (Backup as a Service) in \href{https://console.intellicloud.teradata.com}{IntelliCloud}.}
+        \resumeItem{IntelldCloud BaaS Metering}
+          {Developed the web user interface in \href{https://console.intellicloud.teradata.com}{IntelliCloud} that indicated backup usage to customers.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Amazon Web Services}{Seattle, WA}
       {Software Development Engineer}{July 2014 - May 2017}
       \resumeItemListStart
-        \resumeItem{EC2 NAT Fleet Deployment Workflow}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{EC2 NAT Fleet Deployment Service}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{EC2 NAT Fleet Deployment Command-line Interface}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{EC2 NAT Fleet Alarm Suppression}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
+        \resumeItem{Blackfoot Deployment Workflow}
+          {Designed and developed the deployment workflow that automated software deployment for the fleet of NAT (network address translation) devices named \textit{Blackfoot}. The \textit{Blackfoot} fleet translate and forward network packets for all \href{https://aws.amazon.com/ec2/}{EC2 (Elastic Compute Cloud)} instances. The workflow scaled to deploy \textit{Blackfoot} devices worldwide and deployment concurrency was adjustable based on operational policies.}
+        \resumeItem{Blackfoot Deployment Service}
+          {Designed and developed the deployment service which served as the gateway in front of the Blackfoot deployment workflow. It involved design and development of the RESTful API which opened to create, read, update and delete operations for a software deployment task.}
+        \resumeItem{Blackfoot Deployment Website}
+          {Designed and developed a Django website which served as the web user interface in front of the Blackfoot deployment service.}
+        \resumeItem{Blackfoot Deployment Command-line Interface}
+          {Designed and developed a command-line interface in front of the Blackfoot deployment service to support command-line operations and scripts.}
+        \resumeItem{Blackfoot Alarm Suppression}
+          {Conducted a series of cross-team conversations to renovate the alarm suppression strategy for \textit{Blackfoot} devices. Alarms could be suppressed with a web request, which made it possible to automate ticket creation and resolution against device failures.  }
         \resumeItem{ElasticBGP Route Divergence Metric}
-          {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
+          {Created the metric and alarm that characterize divergence of CIDRs among multiple internal routers. The divergence metric revealed degree of CIDR aggregation in each EC2 availability zone, which helped to monitor and prevent border routers from being overfilled.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -126,27 +128,27 @@
       {Research and Teaching Assistant}{Jan 2013 - May 2014}
       \resumeItemListStart
         \resumeItem{Research Assistant - Biometrics}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+          {Research on new and economic approaches to take concentration measurements of popular chemicals in water and blood such as nitrate and glucose, with integration between a smartphone and biosensor circuitry.}
         \resumeItem{Teaching Assistant - Digital Systems Laborartory}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+          {TA for lab course ECE385 (Digital Systems Laboratory). Guided students to design, build, and test digital systems using transistor-transistor logic (TTL), SystemVerilog, and field-programmable gate arrays (FPGAs).}
       \resumeItemListEnd
 
     \resumeSubheading
       {Amazon}{Seattle, WA}
       {Software Development Engineer Intern}{Summer 2013}
       \resumeItemListStart
-        \resumeItem{Smart AppStore Backend Explorer}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+        \resumeItem{Smart \href{ttps://www.amazon.com/androidapp}{AppStore} Backend Explorer}
+          {Designed and developed the user-friendly website to explore and test backend service of \href{ttps://www.amazon.com/androidapp}{Amazon Android AppStore}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {TechExcel}{Lafayette, CA}
       {Software Development Engineer Intern}{May 2011 - Jul 2011}
       \resumeItemListStart
-        \resumeItem{DevSuite on Android Tablet}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+        \resumeItem{\href{https://www.techexcel.com/products/devsuite}{DevSuite} on Android Tablet}
+          {Set up QA environments for \href{https://www.techexcel.com/products/devsuite}{DevSuite} on Android tablet.}
         \resumeItem{SVN Migration}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+          {Completed \href{https://subversion.apache.org/}{Subversion} data migration between retired and new servers.}
       \resumeItemListEnd
 
 
@@ -156,26 +158,31 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+      \resumeSubItem{Biometric Unlocking System}
+      {An Android application that simulated a smartphone lock in a machine learning approach. It was trained with SVM (support vector machine) algorithm using finger signature data collected from phone users.}
+    \resumeSubItem{MoboSens}
+      {An analytical Android application integrated with biosensor circuitry to measure nitrate concentration.}
+    \resumeSubItem{Gaming Stimuli}
+      {A set of webpage games developed for the purpose of cognitive research. Moves of players were accompanied with pop-up advertisement images. Performance data that were collected from players was useful to evaluate the cognitive impact of advertisement distraction.}
   \resumeSubHeadingListEnd
 
-%
 %--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, JavaScript/TypeScript, C, C++, SQL, Java, Perl, Ruby}
+    }
+    \item{
+          \textbf{Technologies}{: AWS, Django, NodeJS, AngularJS, Ruby on Rails, Flask, RPM, Jenkins, Docker}
+    }
+  \resumeSubHeadingListEnd
+  
+  %-----------PROJECTS-----------------
+%\section{Awards}
+ % \resumeSubHeadingListStart
+  %  \resumeSubItem{Computer System Engineering Final Project Competition}
+   %   {2nd Place.}
+  %\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
