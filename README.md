@@ -1,2 +1,7 @@
 ### License
-Format is MIT but all the data is owned by Sourabh Bajaj.
+
+Credit given to the original template maker:
+Sourabh Bajaj
+
+
+Format is MIT but all the data is owned by Junle Qian.
